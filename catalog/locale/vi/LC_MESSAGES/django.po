@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 17:12+0700\n"
+"POT-Creation-Date: 2021-08-03 15:09+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,3 +120,13 @@ msgstr "Số quyển có sẵn:"
 #: templates/index.html:13
 msgid "Authors:"
 msgstr "Số tác giả:"
+
+#: templates/index.html:15
+msgid "You have visited this page"
+msgstr "Bạn đã truy cập trang này"
+
+#: templates/index.html:15
+msgid "time"
+msgid_plural "times"
+msgstr[0] "lần"
+msgstr[1] "lần"
