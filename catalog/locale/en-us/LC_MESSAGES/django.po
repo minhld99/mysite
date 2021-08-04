@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-03 19:30+0700\n"
+"POT-Creation-Date: 2021-08-04 10:44+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,18 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: catalog/forms.py:7
+msgid "Enter a date between now and 4 weeks (default 3)."
+msgstr ""
+
+#: catalog/forms.py:14
+msgid "Invalid date - renewal in past"
+msgstr ""
+
+#: catalog/forms.py:18
+msgid "Invalid date - renewal more than 4 weeks ahead"
+msgstr ""
 
 #: catalog/templates/base_generic.html:5
 msgid "Local Library"
@@ -49,12 +61,42 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: catalog/templates/catalog/book_detail.html:5
-msgid "Title:"
+#: catalog/templates/catalog/author_confirm_delete.html:5
+msgid "Delete Author"
 msgstr ""
 
+#: catalog/templates/catalog/author_confirm_delete.html:6
+msgid "Are you sure you want to delete the author:"
+msgstr ""
+
+#: catalog/templates/catalog/author_confirm_delete.html:9
+msgid "Yes, delete."
+msgstr ""
+
+#: catalog/templates/catalog/author_detail.html:5
 #: catalog/templates/catalog/book_detail.html:7
 msgid "Author:"
+msgstr ""
+
+#: catalog/templates/catalog/author_detail.html:8
+msgid "Books"
+msgstr ""
+
+#: catalog/templates/catalog/author_form.html:10
+#: catalog/templates/catalog/book_renew_librarian.html:14
+msgid "Submit"
+msgstr ""
+
+#: catalog/templates/catalog/author_list.html:5
+msgid "Author List"
+msgstr ""
+
+#: catalog/templates/catalog/author_list.html:17
+msgid "There are no authors available."
+msgstr ""
+
+#: catalog/templates/catalog/book_detail.html:5
+msgid "Title:"
 msgstr ""
 
 #: catalog/templates/catalog/book_detail.html:8
@@ -77,15 +119,15 @@ msgstr ""
 msgid "Copies"
 msgstr ""
 
-#: catalog/templates/catalog/book_detail.html:22
+#: catalog/templates/catalog/book_detail.html:21
 msgid "Due to be returned:"
 msgstr ""
 
-#: catalog/templates/catalog/book_detail.html:24
+#: catalog/templates/catalog/book_detail.html:23
 msgid "Imprint:"
 msgstr ""
 
-#: catalog/templates/catalog/book_detail.html:25
+#: catalog/templates/catalog/book_detail.html:24
 msgid "Id:"
 msgstr ""
 
@@ -97,11 +139,27 @@ msgstr ""
 msgid "There are no books in the library."
 msgstr ""
 
+#: catalog/templates/catalog/book_renew_librarian.html:5
+msgid "Renew:"
+msgstr ""
+
+#: catalog/templates/catalog/book_renew_librarian.html:6
+msgid "Borrower:"
+msgstr ""
+
+#: catalog/templates/catalog/book_renew_librarian.html:7
+msgid "Due date:"
+msgstr ""
+
 #: catalog/templates/catalog/bookinstance_list_borrowed_user.html:5
 msgid "Borrowed books"
 msgstr ""
 
-#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:15
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:11
+msgid "Renew"
+msgstr ""
+
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:16
 msgid "There are no books borrowed."
 msgstr ""
 
