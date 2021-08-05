@@ -4,14 +4,14 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Create locale file: django-admin makemessages -l vi
-# Update all local files (without losing current translations): django-admin makemessages -a -s
+# Update all local files (without losing current translations): django-admin makemessages -a -s --no-wrap
 # Compile: django-admin compilemessages
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 10:44+0700\n"
+"POT-Creation-Date: 2021-08-05 09:16+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,14 @@ msgstr "Đăng xuất"
 msgid "Login"
 msgstr "Đăng nhập"
 
+#: catalog/templates/base_generic.html:34
+msgid "Staff"
+msgstr "Nhân viên"
+
+#: catalog/templates/base_generic.html:36
+msgid "All borrowed"
+msgstr "Sách đã được mượn"
+
 #: catalog/templates/catalog/author_confirm_delete.html:5
 msgid "Delete Author"
 msgstr "Xoá tác giả:"
@@ -86,8 +94,8 @@ msgstr "Tác giả:"
 msgid "Books"
 msgstr "Tác phẩm:"
 
-#: catalog/templates/catalog/author_form.html:10
-#: catalog/templates/catalog/book_renew_librarian.html:14
+#: catalog/templates/catalog/author_form.html:8
+#: catalog/templates/catalog/book_renew_librarian.html:12
 msgid "Submit"
 msgstr "Gửi"
 
@@ -123,15 +131,15 @@ msgstr "Thể loại:"
 msgid "Copies"
 msgstr "Thông tin từng cuốn:"
 
-#: catalog/templates/catalog/book_detail.html:21
+#: catalog/templates/catalog/book_detail.html:22
 msgid "Due to be returned:"
 msgstr "Hạn trả sách:"
 
-#: catalog/templates/catalog/book_detail.html:23
+#: catalog/templates/catalog/book_detail.html:24
 msgid "Imprint:"
 msgstr "Xuất bản:"
 
-#: catalog/templates/catalog/book_detail.html:24
+#: catalog/templates/catalog/book_detail.html:25
 msgid "Id:"
 msgstr ""
 
@@ -155,17 +163,23 @@ msgstr "Người mượn:"
 msgid "Due date:"
 msgstr "Ngày hết hạn:"
 
-#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:5
-msgid "Borrowed books"
-msgstr "Danh sách quyển đã mượn"
+#: catalog/templates/catalog/bookinstance_list_borrowed_all.html:5
+msgid "All Borrowed Books"
+msgstr "Tất cả sách đã được mượn"
 
-#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:11
+#: catalog/templates/catalog/bookinstance_list_borrowed_all.html:14
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:12
 msgid "Renew"
 msgstr "Gia hạn"
 
-#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:16
+#: catalog/templates/catalog/bookinstance_list_borrowed_all.html:21
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:18
 msgid "There are no books borrowed."
 msgstr "Bạn chưa mượn cuốn sách nào."
+
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:5
+msgid "Borrowed books"
+msgstr "Danh sách quyển đã mượn"
 
 #: catalog/templates/index.html:5
 msgid "Local Library Home"

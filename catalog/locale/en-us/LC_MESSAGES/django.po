@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 10:44+0700\n"
+"POT-Creation-Date: 2021-08-05 09:16+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,14 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
+#: catalog/templates/base_generic.html:34
+msgid "Staff"
+msgstr ""
+
+#: catalog/templates/base_generic.html:36
+msgid "All borrowed"
+msgstr ""
+
 #: catalog/templates/catalog/author_confirm_delete.html:5
 msgid "Delete Author"
 msgstr ""
@@ -82,8 +90,8 @@ msgstr ""
 msgid "Books"
 msgstr ""
 
-#: catalog/templates/catalog/author_form.html:10
-#: catalog/templates/catalog/book_renew_librarian.html:14
+#: catalog/templates/catalog/author_form.html:8
+#: catalog/templates/catalog/book_renew_librarian.html:12
 msgid "Submit"
 msgstr ""
 
@@ -119,15 +127,15 @@ msgstr ""
 msgid "Copies"
 msgstr ""
 
-#: catalog/templates/catalog/book_detail.html:21
+#: catalog/templates/catalog/book_detail.html:22
 msgid "Due to be returned:"
 msgstr ""
 
-#: catalog/templates/catalog/book_detail.html:23
+#: catalog/templates/catalog/book_detail.html:24
 msgid "Imprint:"
 msgstr ""
 
-#: catalog/templates/catalog/book_detail.html:24
+#: catalog/templates/catalog/book_detail.html:25
 msgid "Id:"
 msgstr ""
 
@@ -151,16 +159,22 @@ msgstr ""
 msgid "Due date:"
 msgstr ""
 
-#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:5
-msgid "Borrowed books"
+#: catalog/templates/catalog/bookinstance_list_borrowed_all.html:5
+msgid "All Borrowed Books"
 msgstr ""
 
-#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:11
+#: catalog/templates/catalog/bookinstance_list_borrowed_all.html:14
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:12
 msgid "Renew"
 msgstr ""
 
-#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:16
+#: catalog/templates/catalog/bookinstance_list_borrowed_all.html:21
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:18
 msgid "There are no books borrowed."
+msgstr ""
+
+#: catalog/templates/catalog/bookinstance_list_borrowed_user.html:5
+msgid "Borrowed books"
 msgstr ""
 
 #: catalog/templates/index.html:5
