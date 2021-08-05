@@ -38,6 +38,20 @@
                         </ul>
                     {% endif %}
                 </ul>
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+                    <select name="language">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% for code, name in LANGUAGES %}
+                            <option value="{{ code }}"{% if code == LANGUAGE_CODE %} selected{% endif %}>
+                                {{ name }} ({{ code }})
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" value="OK" />
+                </form>
                 {% endblock %}
             </div>
             <div class="col-sm-10 ">{% block content %}{% endblock %}</div>
